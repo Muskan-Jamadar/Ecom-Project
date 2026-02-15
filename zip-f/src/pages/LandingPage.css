@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Navbar */
+.navbar-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 8%;
+  background: #fff;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.nav-actions button {
+  margin-left: 10px;
+  padding: 10px 22px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: transparent;
+  cursor: pointer;
+}
+
+.signup-btn {
+  background: #c7f000;
+  border: none;
+}
+
+/* Shop Smarter Section */
+.shop-section {
+  padding: 40px 8%;
+}
+
+.shop-section h2 {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.shop-section p {
+  max-width: 680px;
+  color: #555;
+  font-size: 14px;
+  margin: 10px 0 20px;
+}
+
+.tab-btn {
+  padding: 8px 18px;
+  background: #c7f000;
+  border-radius: 16px;
+  border: none;
+  font-size: 13px;
+}
+
+/* Carousel */
+.carousel-wrapper {
+  padding: 0 8%;
+  margin: 40px 0;
+}
+
+.carousel-box {
+  display: flex;
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.carousel-track {
+  display: flex;
+  animation: slide 12s infinite;
+}
+
+.carousel-track img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 60px 8%;
+}
+
+.faq-small {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.faq-title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.faq-sub {
+  max-width: 700px;
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0 40px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.faq-item {
+  position: relative;
+  padding-left: 20px;
+}
+
+.faq-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #e5e5e5;
+}
+
+.faq-item h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 13px;
+  color: #555;
+}
+
+
+
+.hero-image-block {
+  display: grid;
+  grid-template-columns: 140px 100px;
+  grid-template-rows: 100px 140px;
+  gap: 14px;
+  width: 254px;
+  height: 254px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+  max-width: 100%;
+}
